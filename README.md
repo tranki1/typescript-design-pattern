@@ -1,27 +1,53 @@
-# TypeScript Design Pattern Starter
+# TypeScript Design Patterns Playground
 
-Small setup for learning design patterns in TypeScript without extra framework noise.
+This repository is a small playground for learning design patterns in TypeScript by building simple, practical examples.
 
-## Quick start
+The goal is to keep each pattern easy to read, easy to run, and easy to extend later.
+
+## Run the project
+
+Install dependencies and run the example:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build the project:
+Build the TypeScript output:
 
 ```bash
 npm run build
 ```
 
-Run just the example pattern:
+## Pattern roadmap
 
-```bash
-npm run pattern:strategy
-```
+### Creational patterns
 
-## Project shape
+- [x] Builder - [Builder Pattern Guide](./docs/builder-pattern.md).
+- [ ] Factory Method
+- [ ] Abstract Factory
+- [ ] Prototype
+- [ ] Singleton
 
-- `src/index.ts`: default entrypoint for trying examples.
-- `dist/`: compiled JavaScript output after `npm run build`.
+### Structural patterns
+
+- [ ] Adapter
+- [ ] Bridge
+- [ ] Composite
+- [ ] Decorator
+- [ ] Facade
+- [ ] Flyweight
+- [ ] Proxy
+
+### Behavioral patterns
+
+- [ ] Chain of Responsibility
+- [ ] Command
+- [ ] Iterator
+- [ ] Mediator
+- [ ] Memento
+- [ ] Observer
+- [ ] State
+- [ ] Strategy
+- [ ] Template Method
+- [ ] Visitor
