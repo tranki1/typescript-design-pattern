@@ -136,3 +136,5 @@ Your current implemented example is the Builder pattern.
 Main project guide: [project/README.md](project/README.md)
 
 Builder example guide: [project/docs/builder-pattern.md](project/docs/builder-pattern.md)
+
+Builder UML class diagram: [project/docs/builder-pattern.md#uml-class-diagram](project/docs/builder-pattern.md#uml-class-diagram)

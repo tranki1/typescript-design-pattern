@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && npm run ui:data",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
-    "pattern:strategy": "tsx src/patterns/strategy.ts"
+    "pattern:strategy": "tsx src/patterns/strategy.ts",
+    "ui:data": "tsx src/ui/generateBuilderDemoData.ts"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",

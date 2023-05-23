@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Design Patterns UI</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./builder-demo-data.js"></script>
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <p class="eyebrow">Pattern Gallery</p>
+        <h1>TypeScript Design Patterns</h1>
+        <p class="sidebar-copy">
+          A lightweight UI surface for showcasing patterns. Each pattern gets a
+          dedicated section that can grow as needed while keeping the overall
+          layout consistent.
+        </p>
+
+        <nav class="pattern-nav" aria-label="Pattern navigation">
+          <a class="pattern-link pattern-link--active" href="#builder">
+            <span>Builder</span>
+            <small>Available</small>
+          </a>
+          <a class="pattern-link" href="#factory-method">
+            <span>Factory Method</span>
+            <small>Coming next</small>
+          </a>
+          <a class="pattern-link" href="#strategy">
+            <span>Strategy</span>
+            <small>Planned</small>
+          </a>
+          <a class="pattern-link" href="#observer">
+            <span>Observer</span>
+            <small>Planned</small>
+          </a>
+        </nav>
+
+        <section class="sidebar-panel">
+          <h2>Why this layout</h2>
+          <p>
+            The sidebar acts as a pattern index, while the main panel can swap
+            in one focused explanation per pattern. That keeps future additions
+            consistent.
+          </p>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="hero" id="builder">
+          <p class="eyebrow">Featured Pattern</p>
+          <div class="hero-header">
+            <div>
+              <h2 id="pattern-name">Builder</h2>
+              <p class="hero-copy" id="pattern-summary">
+                Showcase how a director coordinates dedicated builders to create
+                article, chapter, and novel content step by step.
+              </p>
+            </div>
+
+            <div class="hero-badge">
+              <strong>Current demo</strong>
+              <span id="pattern-category">Creational pattern</span>
+            </div>
+          </div>
+
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <strong id="metric-builders">3</strong>
+              <span>Concrete builders</span>
+            </article>
+            <article class="metric-card">
+              <strong id="metric-flows">4</strong>
+              <span>Director flows</span>
+            </article>
+            <article class="metric-card">
+              <strong id="metric-base-builder">ContentBuilder</strong>
+              <span>Shared base builder</span>
+            </article>
+          </div>
+          <p class="hero-note" id="demo-source-note">
+            Rendered from the shared Builder demo catalog.
+          </p>
+        </section>
+
+        <section class="section-grid">
+          <article class="panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Pattern Roles</p>
+              <h3>Who does what</h3>
+            </div>
+
+            <div class="role-list" id="role-list"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Build Flow</p>
+              <h3>How construction moves</h3>
+            </div>
+
+            <ol class="flow-list" id="flow-list"></ol>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Demo Scenarios</p>
+            <h3>Current content examples</h3>
+          </div>
+
+          <div class="scenario-browser">
+            <div class="scenario-list" id="scenario-list"></div>
+
+            <article class="preview-card">
+              <div class="preview-header">
+                <div>
+                  <p class="eyebrow">Selected Scenario</p>
+                  <h4 id="scenario-title">Loading scenario...</h4>
+                </div>
+
+                <div class="preview-pills">
+                  <span class="status-pill status-pill--kind" id="scenario-kind"
+                    >article</span
+                  >
+                  <span
+                    class="status-pill status-pill--draft"
+                    id="scenario-status"
+                    >draft</span
+                  >
+                </div>
+              </div>
+
+              <p class="preview-copy" id="scenario-summary">
+                Loading the generated Builder output.
+              </p>
+
+              <pre class="code-block" id="scenario-output"></pre>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-grid section-grid--secondary">
+          <article class="panel" id="factory-method">
+            <div class="panel-heading">
+              <p class="eyebrow">Future Slot</p>
+              <h3>Factory Method</h3>
+            </div>
+            <p>
+              Reserve each new pattern for the same structure: summary,
+              participants, flow, and one or two concrete examples.
+            </p>
+          </article>
+
+          <article class="panel" id="strategy">
+            <div class="panel-heading">
+              <p class="eyebrow">Future Slot</p>
+              <h3>Strategy</h3>
+            </div>
+            <p>
+              The page can grow into a pattern catalog by keeping each pattern
+              card and detail section independent.
+            </p>
+          </article>
+
+          <article class="panel" id="observer">
+            <div class="panel-heading">
+              <p class="eyebrow">Future Slot</p>
+              <h3>Observer</h3>
+            </div>
+            <p>
+              This keeps the first UI intentionally simple while leaving a clear
+              extension point for future patterns.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

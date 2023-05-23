@@ -19,6 +19,14 @@ Build the TypeScript output:
 npm run build
 ```
 
+## Browser UI
+
+A simple static UI is available at `ui/index.html`.
+
+Open it in a browser to get a visual overview of the Builder pattern and a page structure that can later host more patterns.
+
+The page is wired to the shared Builder demo catalog used by the CLI. Running `npm run build` refreshes `ui/builder-demo-data.js` from the TypeScript demo source.
+
 ## Pattern roadmap
 
 ### Creational patterns
