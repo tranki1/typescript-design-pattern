@@ -8,6 +8,7 @@
     "dev": "tsx src/index.ts",
     "dev:factory": "tsx src/creational-pattern/factory/index.ts",
     "dev:abstract-factory": "tsx src/creational-pattern/abstract-factory/index.ts",
+    "dev:prototype": "tsx src/creational-pattern/prototype/index.ts",
     "start": "node dist/index.js",
     "pattern:strategy": "tsx src/patterns/strategy.ts",
     "ui:data": "tsx src/ui/generateBuilderDemoData.ts"
