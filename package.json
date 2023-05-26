@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json && npm run ui:data",
-    "dev": "tsx src/index.ts",
     "dev:factory": "tsx src/creational-pattern/factory/index.ts",
     "dev:abstract-factory": "tsx src/creational-pattern/abstract-factory/index.ts",
     "dev:prototype": "tsx src/creational-pattern/prototype/index.ts",
