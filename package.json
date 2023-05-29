@@ -11,6 +11,7 @@
     "dev:singleton": "tsx src/creational-pattern/singleton/index.ts",
     "dev:adapter": "tsx src/structural-pattern/adapter.ts",
     "dev:composite": "tsx src/structural-pattern/composite.ts",
+    "dev:decorator": "tsx src/structural-pattern/decorator.ts",
     "start": "node dist/index.js",
     "pattern:strategy": "tsx src/patterns/strategy.ts",
     "ui:data": "tsx src/ui/generateBuilderDemoData.ts"
