@@ -12,6 +12,7 @@
     "dev:adapter": "tsx src/structural-pattern/adapter.ts",
     "dev:composite": "tsx src/structural-pattern/composite.ts",
     "dev:decorator": "tsx src/structural-pattern/decorator.ts",
+    "dev:facade": "tsx src/structural-pattern/facade.ts",
     "start": "node dist/index.js",
     "pattern:strategy": "tsx src/patterns/strategy.ts",
     "ui:data": "tsx src/ui/generateBuilderDemoData.ts"
