@@ -14,9 +14,8 @@
     "dev:decorator": "tsx src/structural-pattern/decorator.ts",
     "dev:facade": "tsx src/structural-pattern/facade.ts",
     "dev:iterator": "tsx src/behavioral-pattern/iterator.ts",
-    "start": "node dist/index.js",
-    "pattern:strategy": "tsx src/patterns/strategy.ts",
-    "ui:data": "tsx src/ui/generateBuilderDemoData.ts"
+    "dev:state": "tsx src/behavioral-pattern/state.ts",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
