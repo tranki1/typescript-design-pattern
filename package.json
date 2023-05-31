@@ -15,6 +15,7 @@
     "dev:facade": "tsx src/structural-pattern/facade.ts",
     "dev:iterator": "tsx src/behavioral-pattern/iterator.ts",
     "dev:state": "tsx src/behavioral-pattern/state.ts",
+    "dev:template": "tsx src/behavioral-pattern/template.ts",
     "start": "node dist/index.js"
   },
   "devDependencies": {
