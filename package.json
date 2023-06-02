@@ -16,6 +16,8 @@
     "dev:iterator": "tsx src/behavioral-pattern/iterator.ts",
     "dev:state": "tsx src/behavioral-pattern/state.ts",
     "dev:template": "tsx src/behavioral-pattern/template.ts",
+    "dev:command": "tsx src/behavioral-pattern/command.ts",
+    "dev:mediator": "tsx src/behavioral-pattern/mediator.ts",
     "start": "node dist/index.js"
   },
   "devDependencies": {
