@@ -19,6 +19,7 @@
     "dev:command": "tsx src/behavioral-pattern/command.ts",
     "dev:mediator": "tsx src/behavioral-pattern/mediator.ts",
     "dev:observer": "tsx src/behavioral-pattern/observer.ts",
+    "dev:strategy": "tsx src/behavioral-pattern/strategy.ts",
     "start": "node dist/index.js"
   },
   "devDependencies": {
