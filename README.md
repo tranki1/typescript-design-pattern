@@ -32,30 +32,30 @@ The page is wired to the shared Builder demo catalog used by the CLI. Running `n
 ### Creational patterns
 
 - [x] Builder - [Builder Pattern Guide](./docs/builder-pattern.md).
-- [ ] Factory Method
-- [ ] Abstract Factory
-- [ ] Prototype
-- [ ] Singleton
+- [x] Factory Method
+- [x] Abstract Factory
+- [x] Prototype
+- [x] Singleton
 
 ### Structural patterns
 
-- [ ] Adapter
+- [x] Adapter
 - [ ] Bridge
-- [ ] Composite
-- [ ] Decorator
-- [ ] Facade
+- [x] Composite
+- [x] Decorator
+- [x] Facade
 - [ ] Flyweight
 - [ ] Proxy
 
 ### Behavioral patterns
 
 - [ ] Chain of Responsibility
-- [ ] Command
-- [ ] Iterator
-- [ ] Mediator
+- [x] Command
+- [x] Iterator
+- [x] Mediator
 - [ ] Memento
-- [ ] Observer
-- [ ] State
-- [ ] Strategy
-- [ ] Template Method
+- [x] Observer
+- [x] State
+- [x] Strategy
+- [x] Template Method
 - [ ] Visitor
