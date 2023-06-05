@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Patterns Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-shape bg-one"></div>
+    <div class="background-shape bg-two"></div>
+
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">TypeScript Design Patterns</p>
+        <h1>Interactive Pattern Matching Quiz</h1>
+        <p class="subtitle">
+          Try to answer each scenario with the matching pattern. Leave input
+          empty or type your guess, then press
+          <strong>Reveal Example</strong> to compare.
+        </p>
+      </header>
+
+      <section class="package-selector">
+        <p class="package-label">Choose your quiz package:</p>
+        <div class="package-buttons">
+          <button class="pkg-btn" data-package="10">10 Questions</button>
+          <button class="pkg-btn" data-package="20">20 Questions</button>
+          <button class="pkg-btn" data-package="50">50 Questions</button>
+          <button class="pkg-btn active" data-package="100">
+            100 Questions
+          </button>
+        </div>
+        <button id="start-quiz" class="start-btn">Start Quiz</button>
+      </section>
+
+      <section id="quiz" class="quiz-grid" aria-live="polite" hidden></section>
+
+      <section id="results" class="results-panel" hidden>
+        <div class="results-content">
+          <h2>Quiz Complete!</h2>
+          <div class="results-stats">
+            <div class="stat-box">
+              <p class="stat-label">Correct Answers</p>
+              <p class="stat-value" id="correct-count">0</p>
+            </div>
+            <div class="stat-box">
+              <p class="stat-label">Percentage</p>
+              <p class="stat-value percentage" id="percentage">0%</p>
+            </div>
+            <div class="stat-box">
+              <p class="stat-label">Total Questions</p>
+              <p class="stat-value" id="total-count">0</p>
+            </div>
+          </div>
+          <button id="retake-btn" class="retake-btn">Take Another Quiz</button>
+        </div>
+      </section>
+    </main>
+
+    <template id="quiz-card-template">
+      <article class="quiz-card">
+        <h2 class="question-number"></h2>
+        <p class="question-text"></p>
+
+        <label class="input-label">
+          Your answer
+          <input
+            type="text"
+            class="answer-input"
+            placeholder="Type a pattern name..."
+          />
+        </label>
+
+        <div class="card-actions">
+          <button type="button" class="check-btn">Check</button>
+          <button type="button" class="reveal-btn">Reveal Example</button>
+        </div>
+
+        <p class="feedback" aria-live="polite"></p>
+
+        <div class="reveal-panel" hidden>
+          <p>
+            <strong>Expected pattern:</strong>
+            <span class="expected-answer"></span>
+          </p>
+          <p class="explanation"></p>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

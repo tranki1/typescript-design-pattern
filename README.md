@@ -10,7 +10,7 @@ Install dependencies and run the example:
 
 ```bash
 npm install
-npm run dev
+npm run dev:factory
 ```
 
 Build the TypeScript output:
@@ -23,9 +23,9 @@ npm run build
 
 A simple static UI is available at `ui/index.html`.
 
-Open it in a browser to get a visual overview of the Builder pattern and a page structure that can later host more patterns.
+Open it in a browser to use an interactive design-pattern quiz with 20 scenarios.
 
-The page is wired to the shared Builder demo catalog used by the CLI. Running `npm run build` refreshes `ui/builder-demo-data.js` from the TypeScript demo source.
+Each scenario includes an empty input for your answer, a `Check` button for quick feedback, and a `Reveal Example` button to show the expected pattern and explanation.
 
 ## Pattern roadmap
 
