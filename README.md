@@ -23,6 +23,8 @@ npm run build
 
 A simple static UI is available at `ui/index.html`.
 
+Hosted quiz link: [Quiz UI](https://tranki1.github.io/typescript-design-pattern/ui/)
+
 Open it in a browser to use an interactive design-pattern quiz with 20 scenarios.
 
 Each scenario includes an empty input for your answer, a `Check` button for quick feedback, and a `Reveal Example` button to show the expected pattern and explanation.
